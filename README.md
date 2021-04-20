@@ -1,6 +1,8 @@
 # To do Web Extension
 A to-do extension that demonstrates how to build a Chrome extension.
 
+![image](https://user-images.githubusercontent.com/16775806/115448347-d382b800-a243-11eb-8b1c-c59d18dfd564.png)
+
 ## Objectives of onboarding
 - Things that the on-boarding session should cover:
 	- [x] How to add [browser action](https://developer.chrome.com/docs/extensions/reference/browserAction/) to the toolbar.
