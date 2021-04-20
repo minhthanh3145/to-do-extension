@@ -1,4 +1,6 @@
 # To do Web Extension
+**Note**: Switch to branch master.
+
 A to-do extension that demonstrates how to build a Chrome extension.
 
 <img src="https://user-images.githubusercontent.com/16775806/115448347-d382b800-a243-11eb-8b1c-c59d18dfd564.png" width="400" height="400" />
