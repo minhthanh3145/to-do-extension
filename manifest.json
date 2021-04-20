@@ -1,0 +1,27 @@
+{
+  "name": "To Do",
+  "version": "1.0",
+  "description": "My to do web extension!",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["src/background/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "32": "images/icon/list.png"
+    }
+  },
+  "icons": {
+    "32": "images/icon/list.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1"
+      }
+    }
+  },
+  "permissions": ["storage", "notifications", "contextMenus"]
+}

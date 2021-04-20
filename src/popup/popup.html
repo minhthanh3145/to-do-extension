@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: aliceblue;
+            width: 400px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .section-header-text {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .add-btn {
+            padding-left: 0px;
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            width: 50px;
+        }
+
+        .checkbox_container {
+
+            width: 350px;
+
+        }
+
+        .items-container {
+            background-color: white;
+            overflow-y: scroll;
+            height: 100px;
+        }
+
+        .item-container:hover {
+            background-color: aliceblue;
+        }
+
+        .delete-icon {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.3;
+        }
+
+        .delete-icon:hover {
+            opacity: 1;
+        }
+
+
+        .item-label {
+            display: inline-block;
+            width: 300px;
+            margin-left: 10px;
+        }
+
+        .item-textarea {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="grid-container">
+            <button id="add-toread-item" class="add-btn">
+                <img src="../../images/icon/plus.svg" />
+            </button>
+            <div class=" section-header-text ">To read</div>
+        </div>
+        <div id="toread-items" class="items-container">
+        </div>
+    </div>
+    <div class="section">
+        <div class="grid-container">
+            <button id="add-todo-item" class="add-btn">
+                <img src="../../images/icon/plus.svg" />
+            </button>
+            <div class=" section-header-text ">To do</div>
+        </div>
+        <div id="todo-items" class="items-container">
+
+        </div>
+    </div>
+    <div class="section">
+        <div class=" section-header-text">Done</div>
+        <div id="done-items" class="items-container">
+        </div>
+    </div>
+</body>
+<script src="../../util/lib/marked.js"></script>
+<script src="../../util/lib/jquery-3.6.0.min.js"></script>
+<script type="module" src="popup_ui.js"></script> <!-- We need to declare this as a module to use import statements -->
+
+</html>
